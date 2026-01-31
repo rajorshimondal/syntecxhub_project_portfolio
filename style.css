@@ -1,0 +1,550 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+header{
+    padding: 20px 0;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    height:fit-content;
+    background-color: transparent;
+}
+.nav-container{display: flex;
+    align-items: center;
+    justify-content: space-between;}
+.logo{
+   display: flex;
+   gap: 16px;align-items: center;
+   width: fit-content;
+}
+.logo img{
+    width: 50px;
+    height: 50px; border-radius: 50%;}
+
+#logo-text{font-family: "Inter", sans-serif;
+font-size: 20px;
+font-weight:lighter;
+color: rgb(0, 157, 196);
+}
+.navbar{font-family: "Inter", sans-serif;
+font-size: 12.5px;
+background-color: transparent;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(93, 93, 93);
+    font-weight: 500;
+    font-size: 18px;
+}
+.navbar ul li a:hover{
+    color: rgb(0, 157, 196);
+    transition: 0.3s;
+}
+
+
+main{
+    padding: 20px;
+    margin: 10px;
+}
+.hero-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/hro.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    gap: 20px;
+   
+    
+}
+.hero-text{padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.text{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+
+.ani{
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    line-height:1;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.ani::after{
+    content: " Frontend Developer";
+    color:rgb(0, 157, 196);
+    animation: ani 4s infinite;
+}
+@keyframes ani{
+    0%, 25%{content: " Frontend Developer";}
+    26%, 50%{content: " Web Designer";}
+    51%, 75%{content: " Web Developer";}
+    76%, 100%{content: " Freelancer";}
+}
+
+.lead{
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    color: rgb(140, 140, 140);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.btn{
+    font: 300 1rem "Inter", sans-serif;
+    background-color: rgb(0, 157, 196);
+    color: white;
+}
+.btn:hover{
+    background-color: rgba(5, 205, 255, 0.848);
+    color: rgb(93, 93, 93);
+    transition: 0.3s;
+}
+
+.abt-container{
+    margin-top: 50px;
+    background: linear-gradient(to bottom, #eeeded, #ffffff);
+    border-radius: 25px;
+    gap: 20px;
+}
+.about-header{
+    position: relative;
+    height: fit-content;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.about-bg{
+      position: absolute;
+  font-size: 140px;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 1px #ccc;
+  opacity: 0.6;
+  letter-spacing: 10px;
+}
+.about-title{
+    z-index: 1;
+    position: relative;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000;
+}
+
+.about{
+    padding: 20px;
+}
+.aboutimg img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.abt-right{
+    gap: 16px;
+    padding: 20px;
+    height: fit-content;
+    display: grid;
+}
+.text1 span{
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    color: rgb(0, 157, 196);
+}
+.text2 h2{
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.text5{
+    font-family: "Inter", sans-serif;
+    color: rgb(140, 140, 140);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.btn1{
+    font: 300 1rem "Inter", sans-serif;
+    background-color: rgb(0, 157, 196);
+    color: white;
+    padding: 25px 40px;
+}
+
+.projects-container{
+    display: flex;
+    margin-top: 30px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, #eeeded, #ffffff);
+    padding: 20px;
+}
+.project{
+    padding: 25px;
+    gap: 20px;
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+.pro-header{
+    position: relative;
+    height: fit-content;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+.pro-bg{
+      position: absolute;
+  font-size: 140px;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 1px #ccc;
+  opacity: 0.6;
+  letter-spacing: 10px;
+}
+.pro-title{
+    z-index: 1;
+    position: relative;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000;
+}
+
+
+.project-contain{
+    display: grid;
+    gap: 20px;
+    padding: 15px;
+
+}
+.project-contain img{
+    width: 100%;
+    border-radius: 7px;
+}
+.project-contain h4{
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+    color: rgb(93, 93, 93);
+    background: linear-gradient(to right, #eeeeee, #ffffff);
+    padding: 10px;
+}
+
+.project-contain p{
+    font-family: "Inter", sans-serif;
+    color: rgb(140, 140, 140);
+    line-height: 1.5;
+}
+
+.img-card:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+.img-card{
+    opacity: 0.9;
+    filter: blur(85%);
+    transition: 0.3s ease-in-out;
+}
+
+.skills-container{
+    margin-top: 30px;
+    border-radius: 25px;
+    background: linear-gradient(to top, #eeeded, #ffffff);
+    padding: 20px;
+}
+.skills-header{
+    position: relative;
+    height: fit-content;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+.skills-bg{
+      position: absolute;
+  font-size: 140px;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 1px #ccc;
+  opacity: 0.6;
+  letter-spacing: 10px;
+}
+.skills-title{
+    z-index: 1;
+    position: relative;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000;
+}
+.skill{
+    margin-top: 35px;
+}
+
+.skill-left{
+    padding: 20px;
+}
+.skill-right{
+    padding: 20px;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.div1{
+    background-color: rgb(237, 237, 237);
+    border-radius: 7px;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    color: rgb(93, 93, 93);
+}
+.div1:hover{
+    background-color: rgb(183, 183, 183);
+    transition: 0.3s ease-in-out;
+}
+.div1 h4{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background: linear-gradient( to right, #eeeeee, #ffffff);
+    border-radius: 0px 10px 7px 7px;
+}
+.div1 p{
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.div1 p span{
+    color: rgb(77, 77, 77);
+    padding: 2px 5px;
+}
+
+.div2{
+    background-color: rgb(237, 237, 237);
+    border-radius: 7px;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    color: rgb(93, 93, 93);
+}
+.div2:hover{
+    background-color: rgb(183, 183, 183);
+    transition: 0.3s ease-in-out;
+}
+.div2 h4{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background: linear-gradient( to right, #eeeeee, #ffffff);
+    border-radius: 0px 10px 7px 7px;
+}
+.div2 p{
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.pricing-containar{
+    margin-top: 50px;
+    margin-bottom: 35px;
+    border-radius: 25px;
+    background: linear-gradient(to top, #eeeded, #ffffff);
+    padding: 20px;
+}
+.pricing-header{
+    position: relative;
+    height: fit-content;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+.pricing-bg{
+      position: absolute;
+  font-size: 140px;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 1px #ccc;
+  opacity: 0.6;
+  letter-spacing: 10px;
+}
+.pricing-title{
+    z-index: 1;
+    position: relative;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000;
+}
+
+.pricing-content{
+    margin-top: 35px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+.pricing-card{
+    background-color: rgb(237, 237, 237);
+    border-radius: 15px;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+.pricing-card:hover{
+    background-color: rgb(216, 216, 216);
+    transition: 0.3s ease-in-out;
+}
+.pricing-card h3{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.pricing-card h4{
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgb(0, 157, 196);
+}
+.pricing-card p{
+    font-family: "Inter", sans-serif;
+    color: rgb(117, 117, 117);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.pricing-card ul{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+.pricing-card ul li{
+    font-family: "Inter", sans-serif;
+    color: rgb(134, 134, 134);
+    margin-bottom: 10px;
+}
+
+.foot-container{
+    margin-top: 50px;
+    border-radius: 25px;
+    padding: 20px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    color: rgb(140, 140, 140);
+    border-radius: 20px;
+}
+
+.foot-left{
+    padding: 25px;
+}
+.foot-left h2{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: rgb(0, 157, 196);
+    text-transform: capitalize;
+}
+.foot-left p{
+    font-family: "Inter", sans-serif;
+    color: rgb(140, 140, 140);
+    line-height: 1.5;
+}
+.foot-right{
+    padding: 25px;
+}
+
+.foot-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-content: center;
+}
+
+.copyright{
+    text-align: center;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    color: rgb(205, 205, 205);
+    background-color: rgb(0, 129, 162);
+    border-radius: 0px 0px 25px 25px;
+}
+
+@media screen and (max-width: 768px){
+
+    .nav-container, .hero, .about, .project, .skill, .pricing-content, .footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .about-header, .pro-header, .skills-header, .pricing-header, .foot-container,{
+        justify-content: center;
+        width: fit-content;
+        height: max-content;
+    }
+    .about-bg, .pro-bg, .skills-bg, .pricing-bg{
+        font-size: 40px;
+        width: fit-content;
+        margin-left: 50px;
+        padding: 10px;
+    }
+    .about-title, .pro-title, .skills-title, .pricing-title{
+        font-size: 30px;
+    }
+    .pricing-card{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .hero-container{
+        height: 50vh;
+        font-size: smaller;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navbar ul, .nav-items{
+        gap: 5px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logo img{
+        width: 40px;
+        height: 40px;
+}
+@media screen and (max-width: 768px) {
+    .ani{
+        font-size: 1.8rem;
+    }
+    .text{
+        font-size: 0.9rem;
+    }
+    .hero-text{
+        margin-top: 10px;
+}
